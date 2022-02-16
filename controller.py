@@ -1,4 +1,7 @@
-class Controller:
+import board
+import neopixel
+
+class Controller:    
     def __init__(self, num_lights, color_on, color_off):
         # state of the lights
         self.num_lights = num_lights

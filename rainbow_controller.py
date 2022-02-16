@@ -7,7 +7,6 @@ from controller import Controller
 class RainbowController(Controller):
     DOWN = 144
 
-
     def process_event(self, event):
         self.color_off = self.color_on
         if self.next_light % (self.num_lights * 2) == 0:
