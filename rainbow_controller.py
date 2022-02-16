@@ -2,7 +2,7 @@
 import board
 import neopixel
 
-import Controller
+from controller import Controller
 
 class RainbowController(Controller):
     DOWN = 144
