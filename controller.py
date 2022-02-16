@@ -1,7 +1,8 @@
 import board
 import neopixel
 
-class Controller:    
+class Controller:   
+# Rainbow Control 
     def __init__(self, num_lights, color_on, color_off):
         # state of the lights
         self.num_lights = num_lights
@@ -16,3 +17,4 @@ class Controller:
                                         brightness=1,
                                         pixel_order=neopixel.RGB)
         self.pixels.fill((0,0,0))
+
