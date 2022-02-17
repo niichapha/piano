@@ -1,4 +1,4 @@
-from light_controller import LightController
+from .light_controller import LightController
 
 class RainbowController(LightController):
     DOWN = 144
