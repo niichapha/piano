@@ -19,3 +19,17 @@ class LightController:
                                         brightness=1,
                                         pixel_order=neopixel.RGB)
         self.pixels.fill((0,0,0))
+
+    def set_next(self, color):
+        self.pixels[self.next_light % self.num_lights] = color
+        self.next_light+=1
+
+    def set_previous(self, color):
+        self.pixels[self.prev_light % self.num_lights] = color
+        self.prev_light+=1
+
+    def update_colors(self):
+        if state == LightController.DOWN:
+            self.set_next(self.color_on)
+        else:
+            self.set_next(self.color_off)
