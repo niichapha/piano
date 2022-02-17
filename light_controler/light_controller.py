@@ -28,7 +28,7 @@ class LightController:
         self.pixels[self.prev_light % self.num_lights] = color
         self.prev_light+=1
 
-    def update_colors(self):
+    def update_colors(self, state):
         if state == LightController.DOWN:
             self.set_next(self.color_on)
         else:

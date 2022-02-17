@@ -22,7 +22,7 @@ class RainbowController(LightController):
         print(message, deltatime)
         state = message[0]
 
-        self.update_colors();
+        self.update_colors(state)
            
 
 ##Funtion that makes each light a different rainbow color
