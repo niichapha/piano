@@ -22,6 +22,7 @@ jobs:
     - name: set pythonpath
       run: |
         echo "PYTHONPATH=." >> $GITHUB_ENV
+        echo $GITHUB_ENV
     - name: Analysing the code with pylint
       run: |
         pylint --disable=missing-docstring $(git ls-files '*.py')
