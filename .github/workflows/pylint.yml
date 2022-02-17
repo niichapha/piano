@@ -25,4 +25,5 @@ jobs:
         echo $GITHUB_ENV
     - name: Analysing the code with pylint
       run: |
+        ls
         pylint --disable=missing-docstring $(git ls-files '*.py')
