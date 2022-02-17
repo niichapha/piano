@@ -11,7 +11,7 @@ class MockApi:
 
     def set_all(self, color):
         for i in range(0,self.num_lights):
-            if (i >= len(self.lights)):
+            if i >= len(self.lights):
                 self.lights.append(color)
             else:
                 self.lights[i] = color
