@@ -16,5 +16,8 @@ class Ws281x:
    def set_light(self, light_index, color):
        self.pixels[light_index] = color
 
-   def set_all(self, color)
+   def set_all(self, color):
        self.pixels.fill(color)
+
+   def get_num_lights(self):
+       return self.num_lights

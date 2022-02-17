@@ -1,5 +1,5 @@
-import light_controller.simple_controller as simple_controller
-import lights_api.mock_api as mock_api
+from light_controller import simple_controller
+from lights_api import mock_api
 from piano_lights import LightsFromPiano
 
 api = mock_api.MockApi(100)

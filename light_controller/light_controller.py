@@ -5,6 +5,7 @@ class LightController:
 
     def __init__(self, api, color_on, color_off):
         self.api = api
+        self.num_lights = api.get_num_lights();
         # state of the lights
         self.color_on = color_on
         self.color_off = color_off
