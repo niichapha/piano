@@ -1,4 +1,4 @@
-from .light_controller.rainbow_controller import RainbowController
+import light_controller.rainbow_controller.RainbowController
 from piano_lights import LightsFromPiano
 
 lights_controller = RainbowController(50)

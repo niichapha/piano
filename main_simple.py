@@ -1,4 +1,4 @@
-from .light_controller.simple_controller import SimpleController
+import light_controller.simple_controller.SimpleController
 from piano_lights import LightsFromPiano
 
 lights_controller = SimpleController(5, (244,0,0), (0,0,255))

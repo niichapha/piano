@@ -23,7 +23,6 @@ class RainbowController(LightController):
         state = message[0]
 
         self.update_colors(state)
-           
 
 ##Funtion that makes each light a different rainbow color
 def wheel(pos):
