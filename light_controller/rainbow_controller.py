@@ -1,9 +1,8 @@
 from .light_controller import LightController
 
 class RainbowController(LightController):
-    DOWN = 144
-    def __init__(self, num_lights):
-        super().__init__(num_lights, (255,255,255), (0,0,0))
+    def __init__(self, api):
+        super().__init__(api, (255,255,255), (0,0,0))
 
     def process_event(self, event):
         self.color_off = self.color_on
