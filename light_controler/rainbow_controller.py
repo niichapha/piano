@@ -1,4 +1,5 @@
-from light_controller.light_controller import LightController 
+from light_controller import LightController
+
 class RainbowController(LightController):
     DOWN = 144
     def __init__(self, num_lights):
