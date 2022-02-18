@@ -1,15 +1,9 @@
 # libraries for controlling lights
-import board
-import neopixel
-
-from controller import Controller
+from .controller import Controller 
 
 class SimpleController(Controller):
+    
     DOWN = 144
-    def __init__(self, num_lights, color_on, color_off):
-        super().__init__(num_lights, color_on, color_off )
-
-
     def process_event(self, event):
         message, deltatime = event
         state = message[0]

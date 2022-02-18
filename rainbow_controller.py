@@ -1,13 +1,11 @@
 # libraries for controlling lights
-import board
-import neopixel
-
-from controller import Controller
+from .controller import Controller 
 
 class RainbowController(Controller):
     DOWN = 144
-    def __init__(self, num_lights):
-        super().__init__(num_lights, (255,255,255), (0,0,0))
+
+    def __init__(self, num) -> None:
+        super().__init__(num, (255, 255, 255), (0, 0, 0))
 
     def process_event(self, event):
         self.color_off = self.color_on
