@@ -1,7 +1,6 @@
 # libraries for controlling lights
 
 class LightController:
-    DOWN = 144
 
     def __init__(self, api, color_on, color_off):
         self.api = api
@@ -20,8 +19,8 @@ class LightController:
         self.api.set_light(self.prev_light, color)
         self.prev_light+=1
 
-    def update_colors(self, state):
-        if state == LightController.DOWN:
+    def update_colors(self, down):
+        if down:
             self.set_next(self.color_on)
         else:
             self.set_next(self.color_off)
