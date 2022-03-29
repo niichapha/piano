@@ -7,7 +7,7 @@ class Event:
         self.time_delta = deltatime
 
     def is_down(self):
-        return self.state == DOWN 
+        return self.state == DOWN
 
     def get_key(self):
         return self.key

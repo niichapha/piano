@@ -11,5 +11,5 @@ class MidiInput:
 
     # function that gets called when midi signal is detected
     def __call__(self, midi_event, data=None):
-       event = event_serializer.from_midi_to_event(midi_event)
-       self.event_queue.put(event)
+        event = event_serializer.from_midi_to_event(midi_event)
+        self.event_queue.put(event)
