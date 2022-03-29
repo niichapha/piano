@@ -9,9 +9,9 @@ from use_cases.event_queue_runner import EventQueueRunner
 api = mock_api.MockApi(100)
 
 if len(sys.argv) > 1 and sys.argv[1]=='rainbow':
-   lights_controller = rainbow_controller.RainbowController(api)
+    lights_controller = rainbow_controller.RainbowController(api)
 else:
-   lights_controller = simple_controller.SimpleController(api, (244,0,0), (0,0,255))
+    lights_controller = simple_controller.SimpleController(api, (244,0,0), (0,0,255))
 
 event_queue = queue.Queue(1024)
 midi_input = MidiInput(event_queue)
