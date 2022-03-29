@@ -13,10 +13,10 @@ class RainbowController(LightController):
         self.color_on = wheel(self.next_light * 256 // self.num_lights )
 
         # Only turn on one light for a chord
-        if event.getTimeDelta() < 0.02:
+        if event.get_time_delta() < 0.02:
             print('chord')
             return
-        self.update_colors(event.isDown())
+        self.update_colors(event.is_down())
 
 ##Funtion that makes each light a different rainbow color
 def wheel(pos):
